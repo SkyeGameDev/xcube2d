@@ -1,32 +1,33 @@
 #ifndef __TEST_GAME_H__
 #define __TEST_GAME_H__
 
-#include "../engine/AbstractGame.h"
+#include "AbstractGame.h"
 
 struct GameKey {
-	Point2 pos;
-	bool isAlive;
+    Point2 pos;
+    bool isAlive;
 };
 
 class MyGame : public AbstractGame {
-	private:
-		Rect box;
+    private:
+        Rect box;
 
-		Vector2i velocity;
+        Vector2i velocity;
 
-		std::vector<std::shared_ptr<GameKey>> gameKeys;
+        std::vector<std::shared_ptr<GameKey>> gameKeys;
 
-		/* GAMEPLAY */
-		int score, numKeys, lives;
-		bool gameWon;
+        /* GAMEPLAY */
+        int score, numKeys, lives, level;
+        bool gameWon;
 
-		void handleKeyEvents();
-		void update();
-		void render();
-		void renderUI();
-	public:
+        void handleKeyEvents();
+        void update();
+        void render();
+        void renderUI();
+        void levelTwo();
+    public:
         MyGame();
-		~MyGame();
+        ~MyGame();
 };
 
 #endif
