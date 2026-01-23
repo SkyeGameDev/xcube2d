@@ -1,7 +1,9 @@
 xcube2d
 =======
 
-A simple 2D game engine based on SDL 2.0 to teach core game elements.
+Adaption of xcube2d for CI517 assignment.
+Only change to the normal build process is copying the `templateMap/` directory to `build`
+
 
 ### Dependencies
 
@@ -42,16 +44,6 @@ After this, a ".sln" will be generated in `build/`.
 3. Right click on MyGame again and select Properties.
 4. In the properties window, Linker -> System and change SubSystem to Console.
 5. Copy the `res/` directory to the `build` directory.
+6. Copy the `templateMap/` directory to the `build` directory.
 
 You can now run the demo from Visual Studio via Local Windows Debugger.
-
-### Task
-
-**Read the assignment brief!**
-
-You should only modify:
-
-* MyEngineSystem.h
-* MyEngineSystem.cpp
-* MyGame.h
-* MyGame.cpp
