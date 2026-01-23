@@ -2,7 +2,7 @@ xcube2d
 =======
 
 Adaption of xcube2d for CI517 assignment.
-Only change to the normal build process is copying the `templateMap/` directory to `build`
+Thenly change to the normal build process is copying the `templateMap/` directory to `build`
 
 
 ### Dependencies
